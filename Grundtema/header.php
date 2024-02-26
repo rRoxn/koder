@@ -10,11 +10,9 @@
 	<div id="wrapper">
 		<header>
 			<div>
-				<h1>Här är en rubrik. Logotyp kanske.</h1>
+				<h1> Robins Webb  </h1>
+
 			</div>
-			<aside>
-				<p>Eventuell sidoinformation såsom kontaktuppgifter.Eller knappar för sociala medier</p>
-			</aside>
 		</header>
 		<nav>
 			<ul>

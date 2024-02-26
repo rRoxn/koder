@@ -5,7 +5,7 @@
 ?>  
 <?php get_header(); ?>
 <div class="main">
-			<div id="content">
+			<div id="contentsidor">
 				<article> 
 					<section>
 						<?php 
@@ -16,5 +16,5 @@
 					</section>
 				</article>
 			</div>
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

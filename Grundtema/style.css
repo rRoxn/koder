@@ -7,3 +7,125 @@ License: GNU General Public License v2 or later
 Tags: Taggar här
 Text Domain: Grundteam
 */
+
+
+#wrapper{  /* Gör så innheållet hamnar i mitten och gör en vit backrund */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+    display: grid; 
+    align-items: end; /* Align items to the bottom */
+      }
+
+#startsida { /* Boxen för all content på sida1*/
+    width: 32.5rem;
+    float: left;
+   }
+/* Bilder på sidomeny på startsida*/
+#vaxter{
+    height: 13rem;
+    width: 13rem;
+    float: right;
+}
+h1{ /* Bara för header och blogg rubriker */
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+/*Backrundfärg till hela sidan*/
+body{
+    background-color: #333;
+}
+
+
+/* Ändrar länkar i navigeringsmenyn */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #10bd44;
+    }
+li {
+    float: left;
+    }
+li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    
+li a:hover {
+    background-color:#333;
+    }
+    /* För innehålet till blogg */
+#startsida article section {
+    width: 30rem;
+    border: 3px solid #ccc;
+    margin: 4px;
+    padding: 4px;
+    border-radius: 10px;
+    }
+    
+    /* Detta är för footern och är lådor som man kan lägga information i som kontakt uppfgifter och socialamedier */
+.flex-container {
+        display: flex;
+      }
+      
+.flex-container > div {
+        background-color: #f1f1f1;
+        width: 165px;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+      }
+      
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+    }   
+
+
+
+    /* Här är allt som har med content på sidor att göra.*/
+    #contentsidor article{ /*Box för sidorscontent*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #contentsidor section {
+        width: 40rem;
+        border: 3px solid #ccc;
+        margin: 4px;
+        padding: 4px;
+        border-radius: 10px;
+        
+
+    }
+    #contentsidor{
+        display: flex;
+    }
+    #contentsidor p {
+        
+        font-size: 1.25rem;
+    }
+    /* SLut med content på sidor */
