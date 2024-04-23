@@ -1,0 +1,29 @@
+/* Responsive Styles  */
+@media (max-width: 768px) {
+  #container {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+    width: 100%; /* Container takes full width */
+    padding: 10px;
+  }
+
+  header,
+  nav,
+  content,
+  footer {
+    grid-column: 1; /* All elements span the single column */
+  }
+
+  header,
+  nav,
+  footer {
+    grid-row: span 1; /* Header, nav, and footer each take one row */
+  }
+
+  content,
+  aside {
+    grid-row: auto; /* Content and aside can grow as needed */
+  }
+  content {
+    margin: 0px; /* Tar bort margin från första continern. */
+  }
+}
