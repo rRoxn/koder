@@ -30,21 +30,43 @@ body {
   padding: 10px;
   margin: 0 auto;
   overflow: auto; /* gär så att elements inte går utanför containern */
+  border: 1px solid black;
 }
 
 #header {
-  grid-column: 1 / 10;
+  grid-column: 1 / 9;
   grid-row: 1;
   background-color: #63a8d0;
+  border: 1px solid black;
 }
 
 nav {
   background-color: white;
-  grid-column: 1/10;
+  grid-column: 1/9;
   grid-template-rows: auto;
   border: solid;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: #054c76;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
+li a:hover {
+  background-color: #333;
+}
 nav ul {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -85,6 +107,27 @@ footer {
   background-color: #054c76;
   height: 75px;
   width: 960px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around; /* Distribute sections  */
+}
+
+.footer-section {
+  flex: 1; /* Make sections take up equal space */
+}
+
+/* Style for social media icons */
+.social-media a {
+  color: #fff;
+  font-size: 2em;
+  margin: 10px;
+}
+.copyright {
+  margin-top: 50px;
+}
+.contact {
+  margin-top: 30px;
 }
 /* Responsive Styles 768px */
 @media (max-width: 768px) {
