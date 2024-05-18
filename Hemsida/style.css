@@ -1,0 +1,122 @@
+body {
+  background-color: #14a81e;
+}
+#container {
+  display: grid;
+  grid-template-columns: 1400px; /* Fixes container width to 1400px */
+  grid-template-rows: auto minmax(100px, 1fr) auto; /* Creates header row and flexible navigation row */
+}
+
+header {
+  background-color: #098309; /* Optional background color for the header */
+  padding: 10px 20px; /* Padding for header content */
+  text-align: center; /* Centers header content horizontally */
+  border: solid 1px;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-around; /* Distributes buttons evenly within the container */
+  align-items: center; /* Aligns buttons vertically in the center */
+  background-color: #f0f0f0; /* Optional background color for the menu */
+  padding: 10px 20px; /* Adds padding around the buttons */
+  border: solid;
+}
+
+.nav-menu button {
+  background-color: #e0e0e0; /* Button background color */
+  border: none; /* Removes default button border */
+  padding: 10px 20px; /* Padding for button text */
+  border-radius: 5px; /* Rounded corners for buttons */
+  cursor: pointer; /* Indicates clickable element */
+  background-color: #37b437;
+}
+/* CSS for the content element inside of the container.*/
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  height: 300px;
+  border: solid 1px;
+}
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Three columns with equal width */
+  height: 50%;
+}
+
+.content-item {
+  border: 1px solid #ddd; /* Optional border for each item */
+  padding: 10px;
+  text-align: center; /* Center text within each item */
+  margin: 10px;
+}
+#reklam {
+  display: flex; /* Allow elements to sit side-by-side */
+  width: 1400px; /* Set container width */
+  margin: 0 auto; /* Center container horizontally */
+  border: solid 1px;
+}
+
+.element {
+  width: 50%; /* Set width for each element (half of container width) */
+  height: 300px; /* Set height for each element */
+  background-color: #ddd; /* Optional background color */
+  padding: 10px; /* Optional padding */
+  box-sizing: border-box; /* Ensure padding doesn't affect element size */
+  border: solid 0.5px;
+}
+
+.element-1 {
+  background-color: #f0f0f0; /* Optional different background color */
+}
+
+.element-2 {
+  background-color: #e0e0e0; /* Optional different background color */
+}
+footer {
+  background-color: #ddd; /* Optional background color for the footer */
+  padding: 10px 20px; /* Padding for footer content */
+  text-align: center; /* Center footer content horizontally */
+  display: flex; /* Allow horizontal layout for footer elements */
+  flex: 1;
+  background-color: #098309;
+  border: solid 2px;
+  width: 1200px;
+}
+
+#main-wrapper {
+  display: flex; /* Allow elements to sit side-by-side */
+  width: 100%; /* Container takes full width */
+  background-color: #fff;
+}
+
+#side-menu {
+  width: 200px; /* Set menu width */
+  background-color: #ddd; /* Optional background color */
+  padding: 10px; /* Optional padding */
+}
+
+#side-menu button {
+  width: 100%; /* Buttons take full menu width */
+  height: 50px; /* Set button height */
+  background-color: #eee; /* Optional button background color */
+  border: none; /* Remove default button border */
+  margin-bottom: 5px; /* Add space between buttons */
+  cursor: pointer; /* Indicate clickable element */
+}
+
+#content-area {
+  flex: 1; /* Allow content area to grow and fill remaining space */
+  display: flex; /* Arrange content items horizontally */
+  flex-wrap: wrap; /* Allow content items to wrap onto multiple lines if needed */
+  padding: 10px; /* Optional padding */
+}
+
+.content-element {
+  width: 200px; /* Set content item width */
+  margin: 10px; /* Add space between content items */
+  background-color: #f0f0f0; /* Optional background color */
+  padding: 10px; /* Optional padding */
+  text-align: center; /* Center content within each item */
+  flex: 1;
+}
